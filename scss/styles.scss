@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+// Color variables
+$main-background: hsl(233, 47%, 7%);
+$card-background: hsl(244, 38%, 16%);
+$soft-violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-headings: hsla(0, 0%, 100%, 0.6);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.94rem;
+  font-family: "Inter", sans-serif;
+  background-color: $main-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: $main-paragraph;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+main {
+  width: 100%;
+  max-width: 65rem;
+  background-color: $card-background;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img {
+  background: linear-gradient(
+      hsla(277, 64%, 61%, 0.5),
+      hsla(277, 64%, 61%, 0.5)
+    ),
+    url("../images/image-header-desktop.jpg") no-repeat center center/cover;
+}
+
+section {
+  margin: 4rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+
+    span {
+      color: $soft-violet;
+    }
+  }
+
+  .description {
+    color: $stat-headings;
+    margin-bottom: 4rem;
+  }
+
+  .stats {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    &__number {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    &__label {
+      font-family: "Lexend Deca", sans-serif;
+      text-transform: uppercase;
+      color: $stat-headings;
+      font-size: 0.6rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+// Media queries
+@media (max-width: 750px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 1fr;
+    max-width: 25rem;
+    text-align: center;
+  }
+
+  .img {
+    grid-row: 1;
+    background: linear-gradient(
+        hsla(277, 64%, 61%, 0.5),
+        hsla(277, 64%, 61%, 0.5)
+      ),
+      url("../images/image-header-mobile.jpg") no-repeat center center/cover;
+  }
+
+  section {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+
+    .description {
+      margin-bottom: 2rem;
+    }
+
+    .stats {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+}

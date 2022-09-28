@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [See the code on GitHub]()
-- Live Site URL: [View live site]()
+- Solution URL: [See the code on GitHub](https://github.com/KristinaRadosavljevic/stats-preview-card-component)
+- Live Site URL: [View live site](https://stats-preview-card-component-jade.vercel.app/)
 
 ## My process
 
@@ -38,12 +38,24 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS/Sass
+- Flexbox
+- CSS grid
 
 ### What I learned
 
+In this simple challenge, I got to get some more practice with using grid and flexbox to create responsive layouts. I also learned about accessibility and tinted overlay for background images.
+
 ### Continued development
 
+In the future, I would like to take on some more complex projects to really practice various grid layouts.
+
 ### Useful resources
+
+For this challenge, I found a couple of resources particulary useful:
+
+- [Article on dev.to](https://dev.to/chrissiemhrk/how-to-setup-sass-in-your-project-2bo1): This proved to be a very useful and clean checklist for setting up Sass that I've already used in a couple of projects.
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/img_role): This was my main resource to learn about making an empty `<div>` with a background accessible.
+- [CSS-Tricks](https://css-tricks.com/tinted-images-multiple-backgrounds/): This article helped me figure out the easiest way to get the tinted background image.
 
 ## Author
 
