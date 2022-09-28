@@ -56,3 +56,20 @@ section {
       color: rgba(255, 255, 255, 0.6);
       font-size: 0.6rem;
       letter-spacing: 0.1rem; }
+
+@media (max-width: 750px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 1fr;
+    max-width: 25rem;
+    text-align: center; }
+  .img {
+    grid-row: 1;
+    background: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url("../images/image-header-mobile.jpg") no-repeat center center/cover; }
+  section {
+    margin: 2rem 1.5rem 2rem 1.5rem; }
+    section .description {
+      margin-bottom: 2rem; }
+    section .stats {
+      flex-direction: column;
+      gap: 1.5rem; } }
